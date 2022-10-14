@@ -1,6 +1,6 @@
 const express = require ('express')
 const app = express()
-
+const path = require('path')
 
 
 
@@ -16,5 +16,9 @@ const mainRoutes = require('./src/routes/main.js');
 
 
 
-app.use('/', mainRoutes)
+app.use('/', mainRoutes);
+
+app.set('views', path.join(__dirname,'views'))
+
+app.set('view engine','ejs')
 

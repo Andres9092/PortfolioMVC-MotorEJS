@@ -4,8 +4,8 @@ const path = require('path')
 
 let mainControllers = {
 
-    index : (req,res) => {res.sendFile(path.join(__dirname, '../views/home.html'))},
-    about : (req,res) => {res.sendFile(path.join(__dirname, '../views/about.html'))}
+    home : (req,res) => {res.render('home.ejs')},
+    about : (req,res) => {res.render('about.ejs')}
     
 
 };
