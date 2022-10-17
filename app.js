@@ -18,7 +18,7 @@ const mainRoutes = require('./src/routes/main.js');
 
 app.use('/', mainRoutes);
 
-app.set('views', path.join(__dirname,'views'))
+app.set('views', path.join(__dirname,'src/views'))
 
 app.set('view engine','ejs')
 
